@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+	margin: 0 auto;
+	font-family: 'Helvatica', arial, sans serif;
+}
+
+.hidden{
+	display: none;
+}
+
+.mainHeader{
+	font-size: 30px;
+}
