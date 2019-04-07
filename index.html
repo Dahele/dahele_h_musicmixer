@@ -1,58 +1,43 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Music Mixer</title>
-<!-- link to reset first -->
-<link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
-<link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+	<meta charset="UTF-8">
+	<title>My Music Mixer</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	 <h2 class="mainHeader">Here Our music Mixer</h2>
-	 <div class="Container">
-	 	<section id="promoImg">
-	 		<h2 class="hidden">Images</h2>
-
-	 	<div class="MusicIcon1">
-	 		<img src="">
-	 	</div>
-
-	 	<div class="MusicIcon2">
-	 		<img src="">
-	 	</div>
-
-	 	<div class="MusicIcon1">
-	 		<img src="">
-	 	</div>
-
-	 	<div class="MusicIcon4">
-	 		<img src="">
-	 	</div>
-	 	</section>
-
-	 	<section id="buttonHolder">
-	 		<h2 class=".hidden">Button Work</h2>
-	 		
-	 		<div class="goUp">
-				<img data-buttonref="0" src="">
-	 		</div>
-
-	 		<div class="goDown">
-				<img data-buttonref="1" src="">
-	 		</div>
-
-	 		<div class="goRight">
-				<img data-buttonref="2" src="">
-	 		</div>
-
-	 		<div class="goLeft">
-				<img data-buttonref="3" src="">
-	 		</div>
-
-	 	</section>
-	 </div>
-
+	<div id="container">
+		<div id="background">
+	<div id="mainHeader">
+		<div id="mainLogo">
+			<img src="images/music.svg" width="100px" height="100px" alt="Logo">
+		</div>
+		<section id="musicBox">
+			<div class="dropZone"></div>
+		</section>
+		<div class="heading">
+			<input type="button" class="reload"  value="Refresh" onClick="document.location.reload(true)">
+			<h2>Enjoy With Instruments </h2>
+			<p>Drag your favorite Music instrument and drop into black box for creating your own tone.</p>
+		</div>
+		<section id="musicIcons">
+			<h2 class="hidden">Music Player Icons</h2>
+				<div class="icon1"><img src="images/accordion.svg" id="drag1" alt="accordion" width="150" height="150"></div>
+				<div class="icon2"><img src="images/guitar.svg" id="drag2" alt="guitar" width="150" height="150"></div>
+				<div class="icon3"><img src="images/saxophone.svg" id="drag3"  alt="saxophone" width="150" height="150"></div>
+				<div class="icon4"><img src="images/piano.svg" id="drag4"  alt="piano" width="150" height="150"></div>
+				<div class="icon5"><img src="images/drumsticks.svg" id="drag5"  alt="drumsticks" width="150" height="150"></div>
+				<div class="icon6"><img src="images/drum.svg" id="drag6"  alt="drum" width="150" height="150"></div>
+		</section>
+		</div>
+	</div>
+	<audio src="assets/sounds/accordion.wav" id="accordion" loop></audio>
+	<audio src="assets/sounds/guitar.wav" id="guitar" loop></audio>
+	<audio src="assets/sounds/saxophone.mp3" id="saxophone" loop></audio>
+	<audio src="assets/sounds/piano.wav" id="piano" loop></audio>
+	<audio src="assets/sounds/drumsticks.wav" id="drumsticks" loop></audio>
+	<audio src="assets/sounds/drum.wav" id="drum" loop></audio>
 <script src="js/main.js"></script>
 </body>
-
 </html>

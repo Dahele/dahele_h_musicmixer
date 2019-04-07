@@ -2,13 +2,87 @@
 
 body{
 	margin: 0 auto;
-	font-family: 'Helvatica', arial, sans serif;
+	font-family: 'Helvatica', arial, sans-serif;
 }
 
 .hidden{
 	display: none;
 }
 
-.mainHeader{
-	font-size: 30px;
+#container{
+	margin: 0 auto;
 }
+
+#mainLogo{
+	display: flex;
+	justify-content: center;
+	margin-top: 15px;
+	padding-top: 20px;
+}
+
+
+.dropZone{
+	width: 960px;
+	height: 150px;
+	margin-top: 30px; 
+	margin-bottom: 10px;
+	background-color: black;
+	border: 2px solid white;
+}
+
+#musicIcons{
+	display: flex;
+	flex-direction: center;
+  	justify-content: space-around;
+}
+
+#musicIcons{
+	width: 1200px;
+	height: 150px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: black;
+}
+
+.reload{
+	font-size: 18px;
+	text-align: center;
+	color: red;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+.heading{
+	font-family: 'arial';
+	font-size: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+}
+
+.heading p{
+	font-family: 'arial';
+	font-size: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: white;
+}
+
+#musicBox{
+	display: flex;
+	flex-direction: center;
+	justify-content: space-around;
+}
+
+#background{
+	background-image: url(../images/backgroundplayer.jpg);
+	width: 1200px;
+	height: 600px;
+	margin-left: 400px;
+}
+
+
+
+
+
+
